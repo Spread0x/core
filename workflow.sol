@@ -18,9 +18,12 @@ along with the CRUB Contract. If not, see <http://www.gnu.org/licenses/>.
 @author Stanislav Sobolev <imajacke@gmail.com>
 
 */
+// key:
+//  0x0b15fc43713df036aa0b321c7a29729f1422bd27
 
 
 // Someone should define workflow(elements)
+enum State { Created, Locked, Inactive }; // often used for state machine
 
 contract Workflow {
 	// sequences of elements
@@ -31,16 +34,7 @@ contract Workflow {
 }
 
 
-
-// Action will change state
-contract WorkflowAction {
-
-}
-
 contract WorkflowElement {
-
-}
-contract Element {
    string public name; 
    mapping (uint => wf_state) public states;
 
@@ -68,7 +62,7 @@ contract WorkflowState {
        0.0
        100.0
     /*
-
+    */
 
 
 	function WorkflowState () {
@@ -100,9 +94,15 @@ contract workflowExecutor {
  * The workflowAction contract does this and that...
  */
 contract workflowAction {
-	function workflowAction () {
+	function workflowAction (stateAddr, delta) {
+		this.element = 
 		// will change state 
 	}	
+
+	private function dispenceDelta(delta) return (float) {
+		/////
+		reuturn 100.0
+	}
 }
 
 
