@@ -1,0 +1,71 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Biggs({2015})]{CrowdfundingFailTC}
+John Biggs.
+\newblock {When Crowdfunding Fails The Backers Are Left With No Way Out}.
+\newblock {2015}.
+\newblock URL
+  \url{{http://techcrunch.com/2015/11/19/when-crowdfunding-fails-the-backers-are-left-with-no-way-out/}}.
+
+\bibitem[Buterin({2013})]{buterin2013ethereum}
+Vitalik Buterin.
+\newblock {Ethereum: A Next-Generation Smart Contract and Decentralized
+  Application Platform}.
+\newblock {2013}.
+\newblock URL \url{{https://github.com/ethereum/wiki/wiki/White-Paper}}.
+
+\bibitem[Buterin({2015})]{Vitalik2015subjectivity}
+Vitalik Buterin.
+\newblock {The Subjectivity / Exploitability Tradeoff}.
+\newblock {2015}.
+\newblock URL
+  \url{{https://blog.ethereum.org/2015/02/14/subjectivity-exploitability-tradeoff/}}.
+
+\bibitem[Green({2016})]{GriffDiscussion}
+Griff Green.
+\newblock {private discussion}.
+\newblock {2016}.
+
+\bibitem[Knibbs({2015})]{9MostDisgracefulCrowdFundings}
+Kate Knibbs.
+\newblock {The 9 Most Disgraceful Crowdfunding Failures of 2015}.
+\newblock {2015}.
+\newblock URL
+  \url{{http://gizmodo.com/the-9-most-disgraceful-crowdfunding-failures-of-2015-1747957776}}.
+
+\bibitem[Massolution({2015})]{2015CFReport}
+Massolution.
+\newblock {2015CF - Crowdfunding Industry Report}.
+\newblock {2015}.
+\newblock URL
+  \url{{http://reports.crowdsourcing.org/index.php?route=product/product&path=0_20&product_id=54}}.
+
+\bibitem[Miller({1997})]{miller1997future}
+Mark Miller.
+\newblock {The Future of Law}.
+\newblock In \emph{{paper delivered at the Extro 3 Conference (August 9)}},
+  {1997}.
+
+\bibitem[Reitwiessner and Wood({2015})]{ReitwiessnerWoodSolidity}
+Christian Reitwiessner and Gavin Wood.
+\newblock {Solidity}.
+\newblock {2015}.
+\newblock URL \url{{http://solidity.readthedocs.org/}}.
+
+\bibitem[Szabo({1997})]{szabo1997formalizing}
+Nick Szabo.
+\newblock {Formalizing and securing relationships on public networks}.
+\newblock \emph{{First Monday}}, {2}\penalty0 ({9}), {1997}.
+
+\bibitem[Wood({2014})]{Wood2014ethereum}
+Gavin Wood.
+\newblock {Ethereum: A Secure Decentralised Generalised Transaction Ledger}.
+\newblock {2014}.
+\newblock URL \url{{http://gavwood.com/paper.pdf}}.
+
+\end{thebibliography}

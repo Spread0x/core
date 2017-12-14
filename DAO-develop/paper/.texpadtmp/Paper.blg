@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2017)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: /Users/stan/Downloads/DAO-develop/paper/.texpadtmp/Paper.aux
+The style file: plainnat.bst
+Database file #1: ../Biblio.bib
+Warning--empty journal in CrowdfundingFailTC
+Warning--empty journal in buterin2013ethereum
+Warning--empty journal in Vitalik2015subjectivity
+Warning--empty journal in GriffDiscussion
+Warning--empty journal in 9MostDisgracefulCrowdFundings
+Warning--empty journal in 2015CFReport
+Warning--empty journal in ReitwiessnerWoodSolidity
+Warning--empty journal in Wood2014ethereum
+You've used 10 entries,
+            2773 wiz_defined-function locations,
+            645 strings with 6428 characters,
+and the built_in function-call counts, 3207 in all, are:
+= -- 280
+> -- 111
+< -- 10
++ -- 43
+- -- 33
+* -- 179
+:= -- 523
+add.period$ -- 37
+call.type$ -- 10
+change.case$ -- 41
+chr.to.int$ -- 10
+cite$ -- 28
+duplicate$ -- 194
+empty$ -- 312
+format.name$ -- 45
+if$ -- 660
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 10
+newline$ -- 65
+num.names$ -- 40
+pop$ -- 102
+preamble$ -- 1
+purify$ -- 31
+quote$ -- 0
+skip$ -- 135
+stack$ -- 0
+substring$ -- 20
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 110
+warning$ -- 8
+while$ -- 30
+width$ -- 0
+write$ -- 134
+(There were 8 warnings)
