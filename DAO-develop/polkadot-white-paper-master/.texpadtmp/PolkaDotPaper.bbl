@@ -1,0 +1,135 @@
+\begin{thebibliography}{10}
+
+\bibitem{libp2p}
+The specs for libp2p and associated submodules.
+\newblock \url{https://github.com/libp2p/specs}.
+
+\bibitem{webassembly}
+Webassembly.
+\newblock \url{http://webassembly.org/}, 2016.
+
+\bibitem{blockstream2014sidechains}
+Adam Back, Matt Corallo, Luke Dashjr, Mark Friedenbach, Gregory Maxwell, Andrew
+  Miller, Andrew Poelstra, Jorge Timon, and Pieter Wuille.
+\newblock Enabling blockchain innovations with pegged sidechains.
+\newblock 2014.
+
+\bibitem{bennett2002gnunet}
+Krista Bennett, Christian Grothoff, Tzvetan Horozov, Ioana Patrascu, and
+  Tiberiu Stef.
+\newblock Gnunet-a truly anonymous networking infrastructure.
+\newblock In {\em In: Proc. Privacy Enhancing Technologies Workshop (PET}.
+  Citeseer, 2002.
+
+\bibitem{buterin2013whitepaper}
+Vitalik Buterin.
+\newblock Ethereum: A next-generation smart contract and decentralized
+  application platform.
+\newblock \url{https://github.com/ethereum/wiki/wiki/White-Paper}, 2013.
+
+\bibitem{buterin2016mauve}
+Vitalik Buterin.
+\newblock Ethereum 2.0 mauve paper.
+\newblock 2016.
+
+\bibitem{buterin2016serenity}
+Vitalik Buterin.
+\newblock Serenity poc2.
+\newblock 2016.
+
+\bibitem{nxt}
+Nxt community.
+\newblock Whitepaper: Nxt.
+\newblock \url{http://wiki.nxtcrypto.org/wiki/Whitepaper:Nxt}, 2013.
+
+\bibitem{copeland2016tangaroa}
+Christopher Copeland and Hongxia Zhong.
+\newblock Tangaroa: a byzantine fault tolerant raft.
+\newblock
+  \url{http://www.scs.stanford.edu/14au-cs244b/labs/projects/copeland_zhong.pdf},
+  2016.
+
+\bibitem{kwon2016cosmos}
+Ethan~Buchman Jae~Kwon.
+\newblock Cosmos: A network of distributed ledgers.
+\newblock \url{https://github.com/cosmos/cosmos/blob/master/WHITEPAPER.md},
+  2016.
+
+\bibitem{kwon2014tendermint}
+Jae Kwon.
+\newblock Tendermint: Consensus without mining.
+\newblock \url{http://tendermint.com/docs/tendermint.pdf}, 2014.
+
+\bibitem{bitshares}
+Daniel Larimer.
+\newblock Bitshares.
+\newblock \url{http://docs.bitshares.org/bitshares/history.html}, 2013.
+
+\bibitem{kademlia}
+Petar Maymounkov and David Mazi\`eres.
+\newblock Kademlia: A peer-to-peer information system based on the xor metric.
+\newblock In {\em IPTPS '01 Revised Papers from the First International
+  Workshop on Peer-to-Peer Systems}, pages 53--65, 2002.
+
+\bibitem{miller2016honey}
+Andrew Miller, Yu~Xia, Kyle Croman, Elaine Shi, and Dawn Song.
+\newblock The honey badger of bft protocols.
+\newblock Technical report, Cryptology ePrint Archive 2016/199, 2016.
+
+\bibitem{nakamoto2008bitcoin}
+Satoshi Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock \url{https://bitcoin.org/bitcoin.pdf}, 2008.
+
+\bibitem{ongaro2014search}
+Diego Ongaro and John Ousterhout.
+\newblock In search of an understandable consensus algorithm.
+\newblock In {\em 2014 USENIX Annual Technical Conference (USENIX ATC 14)},
+  pages 305--319, 2014.
+
+\bibitem{parity}
+Parity.
+\newblock Parity ethereum client.
+\newblock \url{https://parity.io}, 2016.
+
+\bibitem{iota2016tangle}
+Serguei Popov.
+\newblock The tangle.
+\newblock \url{https://www.iotatoken.com/IOTA_Whitepaper.pdf}, 2016.
+
+\bibitem{randao}
+Youcai Qian.
+\newblock Randao.
+\newblock \url{https://github.com/randao/randao}, 2015.
+
+\bibitem{sasson2014zerocash}
+Eli~Ben Sasson, Alessandro Chiesa, Christina Garman, Matthew Green, Ian Miers,
+  Eran Tromer, and Madars Virza.
+\newblock Zerocash: Decentralized anonymous payments from bitcoin.
+\newblock In {\em 2014 IEEE Symposium on Security and Privacy}, pages 459--474.
+  IEEE, 2014.
+
+\bibitem{snow2014factom}
+Paul Snow, Brian Deery, Jack Lu, David Johnston, and Peter Kirb.
+\newblock Factom: Business processes secured by immutable audit trails on the
+  blockchain.
+\newblock
+  \url{https://raw.githubusercontent.com/FactomProject/FactomDocs/master/Factom_Whitepaper.pdf},
+  2014.
+
+\bibitem{devp2p}
+Gavin Wood.
+\newblock Devp2p wire protocol.
+\newblock \url{https://github.com/ethereum/wiki/wiki/libp2p-Whitepaper}, 2014.
+
+\bibitem{wood2014yellow}
+Gavin Wood.
+\newblock Ethereum: a secure decentralised generalised transaction ledger.
+\newblock \url{http://gavwood.com/paper.pdf}, 2014.
+
+\bibitem{wood2016committee}
+Gavin Wood.
+\newblock Yellow paper committee.
+\newblock \url{https://github.com/gavofyork/curly-engine}, 2016.
+
+\end{thebibliography}
