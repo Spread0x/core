@@ -25,12 +25,14 @@ function balanceFetched(spread) {
     payload: spread
   }
 }
+const web3 = store.getState().web3.web3Instance
+
 
 /***************************************************************************************************
  * Spread token logic 
  ***************************************************************************************************/
 export const getBalances = (addr, adopters, account) => {
-    let web3 = store.getState().web3.web3Instance
+    //let web3 = store.getState().web3.web3Instance
     var spreadToken, SpreadTokenInstance;
     spreadToken = contract(SpreadTokenArtifact);
     spreadToken.setProvider(web3.currentProvider);
@@ -67,7 +69,6 @@ export const getBalances = (addr, adopters, account) => {
 
 
 export function transferSpread(from, to, quantity) {
-  let web3 = store.getState().web3.web3Instance
   // Double-check web3's status.
   if (typeof web3 !== 'undefined') {
 
@@ -107,7 +108,6 @@ export function loginUser(addr) {
   let web3 = store.getState().web3.web3Instance
   // Double-check web3's status.
   if (typeof web3 !== 'undefined') {
-
     return function(dispatch) {
       // Using truffle-contract we create the authentication object.
       const authentication = contract(AuthenticationContract)
@@ -122,10 +122,8 @@ export function loginUser(addr) {
           console.error(error);
         }
           web3.eth.getBalance(coinbase, (e, blc) => {
-
           authentication.deployed().then(function(instance) {
             authenticationInstance = instance
-
             // Attempt to login user.
             authenticationInstance.login({from: coinbase})
             .then(function(result) {
