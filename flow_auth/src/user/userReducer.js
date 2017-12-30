@@ -16,6 +16,16 @@ const userReducer = (state = initialState, action) => {
       data: null
     })
   }
+  if (action.type === 'BALANCE_FETCHED')
+  {
+    console.log('BALANCE_FETCHED', action, state);
+    console.log('BALANCE_FETCHED', Object.assign({}, state, {
+      data: Object.assign(state.data, {spread: action.payload})
+    }));
+    return Object.assign({}, state, {
+      data: Object.assign(state.data, {spread: action.payload})
+    })
+  }
 
   return state
 }
