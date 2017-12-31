@@ -31,8 +31,9 @@ const web3 = store.getState().web3.web3Instance
 /***************************************************************************************************
  * Spread token logic 
  ***************************************************************************************************/
-export const getBalances = (addr, adopters, account) => {
-    //let web3 = store.getState().web3.web3Instance
+
+export var getBalances = (addr, adopters, account) => {
+    let web3 = store.getState().web3.web3Instance
     var spreadToken, SpreadTokenInstance;
     spreadToken = contract(SpreadTokenArtifact);
     spreadToken.setProvider(web3.currentProvider);
@@ -40,9 +41,7 @@ export const getBalances = (addr, adopters, account) => {
     if (typeof web3 !== 'undefined') {
       return function(dispatch) {
       console.log('Getting balances...');
-      //var account = addr;
       console.log('coinbase account', account);
-      console.log('contract', spreadToken.deployed());
       return spreadToken.deployed().then(function(instance) {
         SpreadTokenInstance = instance;
         console.log('account for balanceOf', account);
