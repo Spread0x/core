@@ -23,7 +23,6 @@ class Dashboard extends Component {
     this.state = {transfer_addr: '', quantity: 0};
     console.log('auth data', this.props, authData);
     authData = this.props
-    this.props.getBalance(this.props.authData.address, this.props.authData.address,this.props.authData.address);
   };
 
   handleSubmit = (e) => {
@@ -38,6 +37,7 @@ class Dashboard extends Component {
   handleChange = (event) => {
     console.log('target', event.target);
     const name = event.target.name;
+    this.props.getBalance(this.state.transfer_addr,this.state.transfer_addr,this.state.transfer_addr);
     this.setState({
       [name]: event.target.value
     });
