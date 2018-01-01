@@ -1,5 +1,8 @@
 import AuthenticationContract from '../../../../build/contracts/Authentication.json'
 import SpreadTokenArtifact from '../../../../build/contracts/SpreadToken.json'
+import HelloWorldArtifact from '../../../../build/contracts/HelloWorld.json'
+
+
 
 import { browserHistory } from 'react-router'
 import store from '../../../store'
@@ -64,6 +67,27 @@ export var getBalances = (addr, adopters, account) => {
   }
 };
 
+
+export function contractTesting() {
+  authentication.setProvider(web3.currentProvider);
+  var helloWorld, HelloWorldInstance;
+  helloWorld = contract(HelloWorldArtifact);
+  helloWorld.setProvider(web3.currentProvider);
+
+  web3.eth.getAccounts(function(error, accounts) {
+    if (error) {console.log(error)}
+    var account = accounts[0];
+    helloWorld.deployed().then((instance) => {
+      HelloWorldInstance = instance;
+      return HelloWorldInstance.transfer(toAddress, amount, {from: account});
+    }).then(function(result) {
+      alert('Transfer Successful!');
+      return getBalances(account,account,account);
+    }).catch(function(err) {
+      console.log(err.message);
+    });
+  });
+}
 
 
 
