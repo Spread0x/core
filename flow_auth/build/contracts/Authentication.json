@@ -1995,13 +1995,8 @@
       "events": {},
       "links": {},
       "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f"
-    },
-    "57779": {
-      "events": {},
-      "links": {},
-      "address": "0x4f171f8ad992c2ae99440dbf827fcd5ecfdfd091"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-30T22:15:00.994Z"
+  "updatedAt": "2017-12-31T01:03:11.021Z"
 }

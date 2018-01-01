@@ -274,13 +274,8 @@
       "events": {},
       "links": {},
       "address": "0xf25186b5081ff5ce73482ad761db0eb0d25abfbf"
-    },
-    "57779": {
-      "events": {},
-      "links": {},
-      "address": "0x5effe77a236d6a73dc7cc369f9fce12db8f83d79"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2017-12-30T22:15:00.991Z"
+  "updatedAt": "2017-12-31T01:03:11.020Z"
 }

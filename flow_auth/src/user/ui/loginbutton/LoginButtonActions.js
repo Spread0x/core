@@ -41,14 +41,14 @@ export var getBalances = (addr, adopters, account) => {
     if (typeof web3 !== 'undefined') {
       return function(dispatch) {
       console.log('Getting balances...');
-      console.log('coinbase account', account);
+      //console.log('coinbase account', account);
       return spreadToken.deployed().then(function(instance) {
         SpreadTokenInstance = instance;
         console.log('account for balanceOf', account);
-        console.log('balanceOf',SpreadTokenInstance.balanceOf(account));
+        //console.log('balanceOf',SpreadTokenInstance.balanceOf(account));
         return SpreadTokenInstance.balanceOf(account);
       }).then(function(result) {
-        console.log('result of balance', result);
+        console.log('result of balance', result.c[0]);
         balance = result.c[0];
         console.log('result for spread token', account, balance);
         return dispatch(balanceFetched(balance));
