@@ -20,13 +20,31 @@ let getWeb3 = new Promise(function(resolve, reject) {
       // Use Mist/MetaMask's provider.
       web3 = new Web3(web3.currentProvider)
 
+
+      const detectNetwork = require('web3-detect-network')
+
+      ;(async () => {
+      const network = await detectNetwork(web3.currentProvider)
+         console.log('detectNetwork', network)
+
+
       results = {
-        web3Instance: web3
+        web3Instance: web3, 
+        network: network
       }
 
       console.log('Injected web3 detected.');
 
-      resolve(store.dispatch(web3Initialized(results)))
+
+
+
+
+        resolve(store.dispatch(web3Initialized(results)))
+
+
+      })()
+
+
     } else {
 
       // Fallback to localhost if no web3 injection. We've configured this to

@@ -5,11 +5,13 @@ const initialState = {
 const web3Reducer = (state = initialState, action) => {
   if (action.type === 'WEB3_INITIALIZED')
   {
-    return Object.assign({}, state, {
-      web3Instance: action.payload.web3Instance
-    })
+    let newState = Object.assign({}, state, {
+      web3Instance: action.payload.web3Instance,
+      network: action.payload.network
+    });
+    console.log('WEB3_INITIALIZED', newState);
+    return newState;
   }
-
   return state
 }
 

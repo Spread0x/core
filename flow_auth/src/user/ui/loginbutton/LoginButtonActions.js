@@ -35,8 +35,13 @@ const web3 = store.getState().web3.web3Instance
  * Spread token logic 
  ***************************************************************************************************/
 
+
+
 export var getBalances = (addr, adopters, account) => {
     let web3 = store.getState().web3.web3Instance
+
+ 
+
     var spreadToken, SpreadTokenInstance;
     spreadToken = contract(SpreadTokenArtifact);
     spreadToken.setProvider(web3.currentProvider);
@@ -67,7 +72,7 @@ export var getBalances = (addr, adopters, account) => {
   }
 };
 
-
+/*
 export function contractTesting() {
   authentication.setProvider(web3.currentProvider);
   var helloWorld, HelloWorldInstance;
@@ -88,6 +93,7 @@ export function contractTesting() {
     });
   });
 }
+*/
 
 
 
