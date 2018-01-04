@@ -1,8 +1,42 @@
+
 App = {
   web3Provider: null,
   contracts: {},
 
   init: function() {
+
+;(async () => {
+console.log('web33',web3); 
+console.log('detectNetwork',detectNetwork); 
+const network = await detectNetwork(web3.currentProvider)
+ 
+console.log(network)
+/*
+{
+  "id": "4",
+  "type": "rinkeby"
+}
+*/
+})()
+
+
+
+    web3.version.getNetwork((err, netId) => {
+      switch (netId) {
+        case "1":
+          console.log('This is mainnet')
+          break
+        case "2":
+          console.log('This is the deprecated Morden test network.')
+          break
+        case "3":
+          console.log('This is the ropsten test network.')
+          break
+        default:
+          console.log('This is an unknown network.')
+      }
+    });
+
     return App.initWeb3();
   },
 

@@ -2,10 +2,10 @@ pragma solidity ^0.4.4;
 
 contract HelloWorld {
   //Begin: state variables
-  address private creator;
-  address private lastCaller;
-  string private message;
-  uint private totalGas;
+  address public creator;
+  address public lastCaller;
+  string public message;
+  uint public totalGas;
   //End: state variables
 
   //Begin: constructor
