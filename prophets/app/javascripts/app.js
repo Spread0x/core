@@ -38,6 +38,7 @@ window.App = {
 
       accounts = accs;
       account = accounts[0];
+      console.log(account);
 
       self.refreshBalance();
     });

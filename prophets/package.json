@@ -1,14 +1,13 @@
 {
-  "name": "truffle-init-webpack",
-  "version": "0.0.2",
-  "description": "Frontend example using truffle v3",
+  "name": "spread-prophets",
+  "version": "0.0.1",
+  "description": "spread-prophets",
   "scripts": {
     "lint": "eslint ./",
-    "build": "webpack",
-    "start": "parcel app/index.html",
-    "dev": "webpack-dev-server"
+    "build": "parcel build index.js",
+    "start": "parcel app/index.html"
   },
-  "author": "Douglas von Kohorn",
+  "author": "Stan",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -19,7 +18,6 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-es2015": "^6.22.0",
     "babel-register": "^6.22.0",
-    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "eslint": "^3.14.0",
     "eslint-config-standard": "^6.0.0",
@@ -27,19 +25,17 @@
     "eslint-plugin-mocha": "^4.8.0",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^2.0.0",
-    "html-webpack-plugin": "^2.28.0",
     "json-loader": "^0.5.4",
     "parcel-bundler": "^1.4.1",
     "style-loader": "^0.13.1",
     "truffle-contract": "^1.1.11",
-    "web3": "^0.20.3",
-    "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "web3": "^0.20.3"
   },
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-plugin-transform-es3-member-expression-literals": "^6.22.0",
     "babel-plugin-transform-es3-property-literals": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0"
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "node-sass": "^4.7.2"
   }
 }
