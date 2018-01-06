@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./lib/web3","loc":{"line":1,"column":19}}],"generated":{"js":"var Web3 = require('./lib/web3');\n\n// dont override global variable\nif (typeof window !== 'undefined' && typeof window.Web3 === 'undefined') {\n    window.Web3 = Web3;\n}\n\nmodule.exports = Web3;\n"},"hash":"e7be59c06b0e55e936009ef74f107838"}

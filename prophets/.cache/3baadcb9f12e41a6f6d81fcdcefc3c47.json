@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"\n\nvar Settings = function () {\n    this.defaultBlock = 'latest';\n    this.defaultAccount = undefined;\n};\n\nmodule.exports = Settings;\n\n"},"hash":"793054b2d3cc92256e694c180507b8b8"}

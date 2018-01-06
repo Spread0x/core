@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"'use strict';\n\n// go env doesn't have and need XMLHttpRequest\nif (typeof XMLHttpRequest === 'undefined') {\n    exports.XMLHttpRequest = {};\n} else {\n    exports.XMLHttpRequest = XMLHttpRequest; // jshint ignore:line\n}\n\n"},"hash":"975eb551c5f4c2c6af8eb123595842b8"}
