@@ -1,5 +1,5 @@
-var SpreadToken = artifacts.require("SpreadToken");
+var C = artifacts.require("C");
 
 module.exports = function(deployer) {
-  deployer.deploy(SpreadToken);
+  deployer.deploy(C);
 };
