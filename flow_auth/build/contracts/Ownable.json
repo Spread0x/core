@@ -601,8 +601,13 @@
       "events": {},
       "links": {},
       "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    },
+    "57779": {
+      "events": {},
+      "links": {},
+      "address": "0x8a74f6ca5d3046255220bd8a80ff02234d4d8144"
     }
   },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-01-09T06:36:30.281Z"
+  "updatedAt": "2018-02-07T08:58:15.748Z"
 }
