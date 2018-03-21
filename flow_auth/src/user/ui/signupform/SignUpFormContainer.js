@@ -10,6 +10,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onSignUpFormSubmit: (name) => {
       dispatch(signUpUser(name))
+      dispatch(signUpUser(name))
+      dispatch(signUpUser(name))
+
     }
   }
 }

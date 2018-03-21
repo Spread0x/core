@@ -1,5 +1,6 @@
 import AuthenticationContract from '../../../../build/contracts/Authentication.json'
 import SpreadTokenArtifact from '../../../../build/contracts/SpreadToken.json'
+import CArtifact from '../../../../build/contracts/C.json'
 import HelloWorldArtifact from '../../../../build/contracts/HelloWorld.json'
 
 
@@ -42,8 +43,32 @@ export var getBalances = (addr, adopters, account) => {
 
  
 
-    var spreadToken, SpreadTokenInstance;
+    var spreadToken, SpreadTokenInstance, cContract, cContractInstance;
     spreadToken = contract(SpreadTokenArtifact);
+
+    cContract = contract(CArtifact)
+    cContract.setProvider(web3.currentProvider);
+
+    return cContract.deployed().then((instance) => {
+        cContractInstance = instance;
+        // ff(string s) public returns
+        SpreadTokenInstance.ff('test').then((result) => {
+          console.log('SpreadTokenInstance.ff');
+          console.log(result);
+        })
+        // f(uint a, uint b
+        SpreadTokenInstance.f(1,4).then((result) => {
+          console.log('SpreadTokenInstance.f');
+          console.log(result);
+        })
+        // f2(uint a, uint b
+        SpreadTokenInstance.f2(6,2).then((result) => {
+          console.log('SpreadTokenInstance.f2');
+          console.log(result);
+        })
+
+    });
+
     spreadToken.setProvider(web3.currentProvider);
     var balance;
     if (typeof web3 !== 'undefined') {
@@ -138,6 +163,41 @@ export function loginUser(addr) {
   // Double-check web3's status.
   if (typeof web3 !== 'undefined') {
     return function(dispatch) {
+
+
+
+
+
+    var spreadToken, SpreadTokenInstance, cContract, cContractInstance;
+    spreadToken = contract(SpreadTokenArtifact);
+
+    cContract = contract(CArtifact)
+    cContract.setProvider(web3.currentProvider);
+
+    return cContract.deployed().then((instance) => {
+        console.log('instance', instance);
+        cContractInstance = instance;
+        // ff(string s) public returns
+        cContractInstance.ff('test').then((result) => {
+          console.log('cContractInstance.ff');
+          console.log(result);
+        })
+        // f(uint a, uint b
+        cContractInstance.f(1,4).then((result) => {
+          console.log('cContractInstance.f');
+          console.log(result);
+        })
+        // f2(uint a, uint b
+        cContractInstance.f2(6,2).then((result) => {
+          console.log('cContractInstance.f2');
+          console.log(result);
+        })
+
+    });
+
+
+
+
       // Using truffle-contract we create the authentication object.
       const authentication = contract(AuthenticationContract)
       authentication.setProvider(web3.currentProvider);

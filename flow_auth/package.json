@@ -48,6 +48,9 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
+    "eth-block-tracker": "^2.3.0",
+    "ethjs": "^0.3.3",
+    "ethjs-provider-http": "^0.1.6",
     "ipfs": "^0.27.5",
     "jquery": "^3.2.1",
     "react": "^15.4.2",
@@ -59,6 +62,7 @@
     "redux-auth-wrapper": "^1.0.0",
     "redux-thunk": "^2.2.0",
     "web3-detect-network": "0.0.17",
+    "web3-eth-iban": "^1.0.0-beta.30",
     "zeppelin-solidity": "^1.5.0"
   },
   "scripts": {
